@@ -6,4 +6,13 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root to: "pages#home"
+
+  resources :lists, only: [:new, :create, :edit, :update, :destroy] do
+    resources :releases, only: [:index, :new, :create]
+  end
+
+  resources :releases, only: [:show, :edit, :update, :destroy]
+
+
+  get "dashboard", to: "pages#dashboard"
 end
