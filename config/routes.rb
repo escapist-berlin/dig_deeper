@@ -15,4 +15,5 @@ Rails.application.routes.draw do
 
 
   get "dashboard", to: "pages#dashboard"
+  get "results", to: "pages#results"
 end

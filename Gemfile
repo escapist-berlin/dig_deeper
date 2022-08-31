@@ -23,8 +23,6 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
-gem "simple_form", github: "heartcombo/simple_form"
-
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
@@ -33,11 +31,10 @@ gem "jbuilder"
 
 gem "devise"
 
+gem "discogs-wrapper"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
-
-# Scss Gem
-gem "sassc-rails"
 
 # Simple Form
 gem "simple_form", github: "heartcombo/simple_form"
@@ -57,7 +54,7 @@ gem "bootsnap", require: false
 gem "dotenv-rails", groups: [:development, :test]
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

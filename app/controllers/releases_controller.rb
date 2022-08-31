@@ -37,7 +37,4 @@ class ReleasesController < ApplicationController
   def release_params
     params.require(:release).permit(:artist, :title, :label, :catalog_number, :format, :released, :styles, :tracklist, :link, :cover_url, :photo)
   end
-
-  # def discogsApi(searchParams)
-  # end
 end
