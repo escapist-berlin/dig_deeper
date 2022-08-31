@@ -16,6 +16,7 @@ class ReleasesController < ApplicationController
     @release = Release.new(release_params)
     @list = List.find(params[:list_id])
     @release.list = @list
+    # response_from_api = discogsApi()
     @release.save
 
     redirect_to release_path(@release)
@@ -34,6 +35,9 @@ class ReleasesController < ApplicationController
   private
 
   def release_params
-    params.require(:release).permit(:artist, :title, :label, :catalog_number, :format, :released, :styles, :tracklist, :link, :cover_url)
+    params.require(:release).permit(:artist, :title, :label, :catalog_number, :format, :released, :styles, :tracklist, :link, :cover_url, :photo)
   end
+
+  # def discogsApi(searchParams)
+  # end
 end
