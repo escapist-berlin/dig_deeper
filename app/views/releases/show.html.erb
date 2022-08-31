@@ -1,10 +1,22 @@
 
 <%# <%= link_to "Edit this release", edit_release_path(@release), class: "btn_main" %>
-<div class="wrapper_show">
-<div class="container_1"><div class="album_container">container</div></div>
-<div class="container_2">container_2</div>
-<div class="container_3">container_3</div>
+<div class="wrapper_show"  ><%= image_tag(@release.cover_url, class: "release_img_0") %>
+  <div class="container_1">
+    <div class="release_img"><%= image_tag(@release.cover_url, class: "release_img") %></div>
+  </div>
+  <div class="container_2"><h1><%= @release.artist %></h1>
+    <h2><%= @release.title %></h2>
+    <p><%= @release.label %></p>
+    <p><%= @release.catalog_number %></p>
+    <p><%= @release.format %></p>
+    <p><%= @release.released %></p>
+    <p><%= @release.styles %></p>
+    <p><%= @release.tracklist %></p>
+  </div>
+  <div class="container_3">
+<%# <%= btn_main class: "btn_main" %> %>
 <%# <% if @release.cover_url.attached? %>
     <%# <%= cl_image_tag @release.photo.key, height: 300, width: 400, crop: :fill %>
   <%# <% end %>
+  </div>
 </div>
