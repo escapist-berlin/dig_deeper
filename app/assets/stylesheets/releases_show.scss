@@ -9,8 +9,70 @@
 // <p><%= @release.tracklist %></p>
 // <p><%= @release.cover_url %></p>
 
+.wrapper_show{
+  height: 100%;
+  display: flex;
+  .container_1{
+    .album_container {
+      width: 40%;
+      height: 100%;
+      background: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  }
+  .container_2{
+    width: 40%;
+    height: 100%;
+    background: green;
+
+  }
+  .container_3{
+    width: 20%;
+    height: 100%;
+    background: red;
+  }
 
 
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 24px;
+  font-family: 'Syne', sans-serif;
+  width: 306px;
+  height: 246px;
+  left: 650px;
+  top: 300px;
+}
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 650px;
+  gap: 24px;
+  font-family: 'Syne', sans-serif;
+  width: 300px;
+  height: 246px;
+  left: 650px;
+  top: 391px;
+
+  }
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 24px;
+    font-family: 'Syne', sans-serif;
+    width: 300px;
+    height: 246px;
+    left: 650px;
+    top: 400px;
+
+    }
   .btn_main {
     margin-top: 1rem!important;
     margin-bottom: 1rem!important;
@@ -19,7 +81,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 120px;
     gap: 8px;
     width: 316px;
     height: 58px;
@@ -29,11 +90,22 @@
     flex: none;
     order: 2;
     flex-grow: 0;
+    left: 660px;
+    top: 10px;
+    font-family: 'Syne', sans-serif;
+
 }
 
-.cover_url {
 
-
+.release_img{
+width: 372px;
+height: 360px;
+left: 152px;
+top: 248px;
 }
-
-body{background-color: rgb(225, 217, 217);}
+body{
+  // background-image: url('images/checked.png');: var(--url);
+  background:rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(30px);
+}
+}
