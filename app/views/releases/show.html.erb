@@ -10,3 +10,6 @@
 <p><%= @release.styles %></p>
 <p><%= @release.tracklist %></p>
 <p><%= @release.cover_url%></p>
+<% if @release.photo.attached? %>
+  <%= cl_image_tag @release.photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>
