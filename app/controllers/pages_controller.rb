@@ -10,7 +10,28 @@ class PagesController < ApplicationController
     @search_query = params['search']['title']
     @release = discogs_api(@search_query)
     @cover_image = discogs_api_img(@search_query)
+    @list = List.find_by(title: 'spotlight')
   end
+
+  # def create
+  #   @api_release = Release.new(
+  #     artist: @release.artists[0].name,
+  #     title: @release.title,
+  #     label: @release.labels.first.name,
+  #     catalog_number: @release.labels.first.catno,
+  #     format: @release.formats.first.name,
+  #     released: @release.released,
+  #     styles: @release.styles,
+  #     tracklist: @release.tracklist.map { |track| track.title },
+  #     cover_url: @cover_image
+  #   )
+  #   @list = List.find_by(title: 'spotlight')
+  #   @api_release.list = @list
+  #   # response_from_api = discogsApi()
+  #   @api_release.save
+
+  #   redirect_to dashboard_path
+  # end
 
   private
 
