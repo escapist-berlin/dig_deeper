@@ -1,6 +1,6 @@
-<%= link_to "Back to the list", :back, class: "button_main my-3" %>
-
 <div class="container">
+
+<%= link_to "Back to the list", :back, class: "btn_main" %>
  <%= simple_form_for [@list, @release] do |f| %>
    <%= f.input :artist %>
    <%= f.input :title %>
