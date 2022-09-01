@@ -10,22 +10,24 @@
 // <p><%= @release.cover_url %></p>
 
 .wrapper_show{
-  height: 100%;
   overflow: scroll;
   background-size: cover;
   background-position: center;
-
-
+  background-image: asset-url("background-image.jpg");
+  background-size: cover;
+  opacity: 85%;
 
 
 }
 .release_img_0{
-  width: 80%;
-  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0.5;
+  size:cover;
+  overflow: scroll;
+  position: center;
+
   }
 
 
