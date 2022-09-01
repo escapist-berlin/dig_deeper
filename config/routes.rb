@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   resources :releases, only: [:show, :edit, :update, :destroy]
 
   get "dashboard", to: "pages#dashboard"
+
   get "results", to: "pages#results"
-  post "results", to: "pages#results"
+
+  get "test", to: "testsrequests#receiving"
+  # post "results", to: "pages#save_btn", as: :save_result
 end
