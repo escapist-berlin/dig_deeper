@@ -1,11 +1,10 @@
 @import "bootstrap/scss/bootstrap";
-
 @import "releases_show";
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 
 
-// CSS partials
 @import "components/index";
+@import "components/dashboard";
 @import "pages/index";
 
 
