@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @releases = Release.all
   end
 
   def results
