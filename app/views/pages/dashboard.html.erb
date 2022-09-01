@@ -12,9 +12,10 @@
 <img src='' alt="" class="cover_img">
   <h6 class = "left">cover</h6>
   <h6 class = "right">Artist</h6>
-  <h6>Title</h6>
-  <h6>Lebel</h6>
-  <h6>Released</h6>
+  <h6>TITle</h6>
+  <h6>LABEL</h6>
+  <h6>RELEASED</h6>
+  <h6>TAGS</h6>
 </div>
   <% @releases.each do |release| %>
     <div class = "sportlight_card">
@@ -23,6 +24,16 @@
       <h6> <%= release.title %> </h6>
       <h6> <%= release.label %> </h6>
       <h6> <%= release.released %> </h6>
+      <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
     </div>
 
 
