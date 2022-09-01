@@ -15,13 +15,13 @@ gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+gem "cloudinary"
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
-
-gem "simple_form", github: "heartcombo/simple_form"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
@@ -31,11 +31,10 @@ gem "jbuilder"
 
 gem "devise"
 
+gem "discogs-wrapper"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
-
-# Scss Gem
-gem "sassc-rails"
 
 # Simple Form
 gem "simple_form", github: "heartcombo/simple_form"
@@ -52,8 +51,10 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem "dotenv-rails", groups: [:development, :test]
+
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

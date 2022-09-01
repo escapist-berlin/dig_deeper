@@ -1,1 +1,31 @@
-<h1>Dashboard</h1>
+<div class="container">
+
+  <h1>Dashboard</h1>
+
+  <div class="search-form">
+    <%= simple_form_for :search, url: results_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+      <%= f.input :title, input_html: {value: ""} %>
+      <%= f.submit "Search", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+<div class = "sportlight_card">
+<img src='' alt="" class="cover_img">
+  <h6 class = "left">cover</h6>
+  <h6 class = "right">Artist</h6>
+  <h6>Title</h6>
+  <h6>Lebel</h6>
+  <h6>Released</h6>
+</div>
+  <% @releases.each do |release| %>
+    <div class = "sportlight_card">
+    <img src='<%= release.cover_url  %>' alt="" class="cover_img">
+      <h6> <%= release.artist %></h6>
+      <h6> <%= release.title %> </h6>
+      <h6> <%= release.label %> </h6>
+      <h6> <%= release.released %> </h6>
+    </div>
+
+
+  <% end %>
+
+</div>
